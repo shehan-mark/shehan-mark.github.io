@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'source-map',
   devServer: {
-    static: './dist',
+    static: './build',
     devMiddleware: {
       index: true,
       writeToDisk: true,
