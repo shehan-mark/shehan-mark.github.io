@@ -1,0 +1,171 @@
+// @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@font-face {
+  font-family: 'DanielDavis';
+  src: url('./fonts/davis/DanielDavis.eot');
+  src: url('./fonts/davis/DanielDavis.eot') format('embedded-opentype'),
+       url('./fonts/davis/DanielDavis.woff2') format('woff2'),
+       url('./fonts/davis/DanielDavis.woff') format('woff'),
+       url('./fonts/davis/DanielDavis.ttf') format('truetype'),
+       url('./fonts/davis/DanielDavis.svg#DanielDavis') format('svg');
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icons/icomoon.eot?x0hdw2');
+  src:  url('./fonts/icons/icomoon.eot?x0hdw2#iefix') format('embedded-opentype'),
+    url('./fonts/icons/icomoon.ttf?x0hdw2') format('truetype'),
+    url('./fonts/icons/icomoon.woff?x0hdw2') format('woff'),
+    url('./fonts/icons/icomoon.svg?x0hdw2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src:  url('./fonts/roboto/RobotoSlab-Regular.ttf');
+  src:  url('./fonts/roboto/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github-brands:before {
+  content: "\e900";
+}
+.icon-linkedin-brands:before {
+  content: "\e901";
+}
+
+body {
+  background: #212121;
+}
+
+.greet-wrapper {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  padding-right: 1rem;
+
+  p {
+    font-family: 'DanielDavis';
+    margin: 0;
+  }
+  
+  .greet-greet {
+    font-size: 10rem;
+    color: white;
+    letter-spacing: 1rem;
+    display: inline;
+  }
+  .greet-hand {
+    font-style: normal;
+    font-size: 7rem;
+    display: inline-block;
+    // animation: 3s ease-in infinite wave;
+    animation: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    transform-origin: 80% 80%;
+  }
+  .greet-name {
+    font-size: 10rem;
+    color: white;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .greet-profession {
+    font-family: 'RobotoSlab', serif;;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .reach-holder {
+    div {
+      cursor: pointer;
+      padding: 0.5rem;
+      height: fit-content;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: 'RobotoSlab', serif;
+      letter-spacing: 0.1rem;
+    }
+    .brand-box  {
+      width: fit-content;
+      border-radius: 0.5rem;
+      line-height: 1rem;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    .linked-in {
+      background: #0a66c2;
+
+    }
+    .github {
+      background: black;
+    }
+  }
+}
+
+// @keyframes wave {
+//   0 {
+//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+//   }
+//   20% {
+//     transform: rotateX(45deg) rotateY(-25deg) rotateZ(-15deg);
+//   }
+//   40% {
+//     transform: rotateX(0deg) rotateZ(0deg) rotateZ(0deg);
+//   }
+//   60% {
+//     transform: rotateX(45deg) rotateY(-25deg) rotateZ(-15deg);
+//   }
+//   80% {
+//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+//   }
+//   100% {
+//     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+//   } 
+// }
+
+@keyframes wave {
+  0 {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(45deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(45deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  } 
+}
