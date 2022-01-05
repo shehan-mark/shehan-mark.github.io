@@ -1,2 +1,0 @@
-(()=>{"use strict";window.onload=function(){console.log("initializing live code...");var e=document.getElementById("main-banner-area");if(e.offsetWidth>1360)for(var i=0;i<400;i++){var n=document.createElement("div");n.classList.add("animation-box"),e.appendChild(n)}}})();
-//# sourceMappingURL=main.7d4648929220ab829edc.js.map
