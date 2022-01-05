@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(167, 167, 167);
+}
+
+.hover-container {
+  /* This will come into play later */
+  perspective: 40px;
+  width: fit-content;
+  // position: absolute;
+
+  .inner {
+    width: 20em;
+    height: 18em;
+    background-color: #212121;
+    // box-shadow: 2px 2px 50px rgba(26, 16, 16, 0.2);
+    transition: transform 0.5s;
+  }
+}
+
+
+.container-one {
+  top: 0;
+  left: 0;
+}
+.container-two {
+  top: 0;
+  left: 20em;
+}
+.container-three {
+  top: 18em;
+  left: 0;
+}
+.container-four {
+  top: 18em;
+  left: 20em;
+}
+
+#helper {
+  color: white;
+  padding: 0.2em;
+  border-radius: 5%;
+  background-color: grey;
+  
+  position: absolute;
+  z-index: 0;
+  display: none;
+}

@@ -1,0 +1,57 @@
+
+@font-face {
+  font-family: 'DanielDavis';
+  src: url(aca580f198fb6986ca97.eot);
+  src: url(aca580f198fb6986ca97.eot) format('embedded-opentype'),
+       url(142b982835ae06a8caaa.woff2) format('woff2'),
+       url(54904506dc0bf5bc7aac.woff) format('woff'),
+       url(1069d81849fe739c74b9.ttf) format('truetype'),
+       url(8f3b496223686031020a.svg#DanielDavis) format('svg');
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url(476c4e37439eb700a1e1.eot?x0hdw2);
+  src:  url(476c4e37439eb700a1e1.eot?x0hdw2#iefix) format('embedded-opentype'),
+    url(2c6a41fa8add1fa35086.ttf?x0hdw2) format('truetype'),
+    url(163e23073832e57e33dc.woff?x0hdw2) format('woff'),
+    url(6195126d546bc0d1b58f.svg?x0hdw2#icomoon) format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src:  url(a36eb364ea843d014808.ttf);
+  src:  url(a36eb364ea843d014808.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github-brands:before {
+  content: "\e900";
+}
+.icon-linkedin-brands:before {
+  content: "\e901";
+}
+body{margin:0;background:#575656}#main-banner-area{background:#2f2f2f;width:100vw;height:100vh;perspective:400px;overflow:hidden;display:flex;flex-wrap:wrap;filter:blur(1px)}#main-banner-area .animation-box{height:calc(100vh/ 20);width:calc(100vw/ 20);background:#212121;outline:0.5px solid #131212;transition:all ease-in 0.3s}#main-banner-area .animation-box:hover{transform:scale(1.05);outline:0.1px solid #131212b5}.greet-wrapper{position:absolute;right:2rem;top:25%;text-align:right}.greet-wrapper p{font-family:'DanielDavis';margin:0}.greet-wrapper .greet-greet{font-size:5rem;color:white;letter-spacing:0.5rem;display:inline}@media screen and (min-device-width: 1200px){.greet-wrapper .greet-greet{font-size:10rem;letter-spacing:1rem}}.greet-wrapper .greet-hand{font-style:normal;font-size:5rem;display:inline-block;margin-right:4rem;animation:wave;animation-duration:2s;animation-iteration-count:infinite;animation-delay:1s;transform-origin:80% 80%}@media screen and (min-device-width: 1200px){.greet-wrapper .greet-hand{font-size:7rem}}.greet-wrapper .greet-name{font-size:5rem;color:white;letter-spacing:0.5rem;margin-bottom:1rem}@media screen and (min-device-width: 1200px){.greet-wrapper .greet-name{font-size:10rem;letter-spacing:1rem}}.greet-wrapper .greet-profession{font-family:'RobotoSlab', serif;font-size:1rem;color:white;letter-spacing:0.5rem;margin-bottom:1rem}@media screen and (min-device-width: 1200px){.greet-wrapper .greet-profession{font-size:2rem;letter-spacing:1rem}}.greet-wrapper .reach-holder div{cursor:pointer;padding:0.5rem;height:fit-content}.greet-wrapper .reach-holder a{text-decoration:none;color:white;font-family:'RobotoSlab', serif;font-size:0.8rem;letter-spacing:0.1rem}.greet-wrapper .reach-holder .brand-box{width:fit-content;border-radius:0.5rem;line-height:1rem;display:inline-block;margin-right:1rem}.greet-wrapper .reach-holder .linked-in{background:#0a66c2}.greet-wrapper .reach-holder .github{background:black}@keyframes wave{0{transform:rotate(0deg)}20%{transform:rotate(45deg)}40%{transform:rotate(0deg)}60%{transform:rotate(45deg)}80%{transform:rotate(0deg)}100%{transform:rotate(0deg)}}
+
+
+/*# sourceMappingURL=main.f98bd274558102d9c45b.css.map*/
