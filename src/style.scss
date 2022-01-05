@@ -6,7 +6,9 @@ body {
   background: rgb(87, 86, 86);
 }
 
-$squarAmountPerSide: 20;
+$squarAmountPerSideDesktop: 20;
+$squarAmountPerSideMobile: 5;
+
 #main-banner-area {
   background: #2f2f2f;
   width: 100vw;
@@ -19,14 +21,18 @@ $squarAmountPerSide: 20;
   filter: blur(1px);
 
   .animation-box {
-    height: calc(100vh/ #{$squarAmountPerSide});
-    width: calc(100vw/ #{$squarAmountPerSide});
+    height: calc(100vw/ #{$squarAmountPerSideMobile});
+    width: calc(100vw/ #{$squarAmountPerSideMobile});
     background: #212121;
-    // outline: 0.5px solid #252525;
     outline: 0.5px solid #131212;
-    // outline: 0.5px solid rgb(63, 54, 2);
     transition: all ease-in 0.3s;
-    
+
+    @media screen 
+    and (min-device-width: 811px) {
+      height: calc(100vw/ #{$squarAmountPerSideDesktop});
+      width: calc(100vw/ #{$squarAmountPerSideDesktop});
+    } 
+
     &:hover {
       // transform: rotateY(10deg);
       transform: scale(1.05);

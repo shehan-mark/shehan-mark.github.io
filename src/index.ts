@@ -4,7 +4,7 @@ import './style.scss';
 // import { hoverEffectInit } from './components/hover-box';
 // https://stackify.com/node-js-module-exports/
 // https://www.sitepoint.com/understanding-module-exports-exports-node-js/
-const desktopWindowSize = 1360;
+const desktopWindowSize = 1200;
 
 window.onload = function() {
   console.log('initializing live code...');
@@ -16,14 +16,19 @@ window.onload = function() {
   
   const squarAmountPerSide = 20;
   // let NumberOfSquaresX = 0, NumberOfSquaresY = 0;
+  let totalSquars = 0;
   if (bannerWidth > desktopWindowSize) {
+    totalSquars = squarAmountPerSide * squarAmountPerSide;
 
-    const totalSquars = squarAmountPerSide * squarAmountPerSide;
-    for (let i = 0; i < totalSquars; i++) {
-      const animationBox = document.createElement('div');
-      animationBox.classList.add('animation-box');
-      animationContainer.appendChild(animationBox)
-    }
+  } else {
+    const mobileSquarAmountPerSide = squarAmountPerSide / 2;
+    totalSquars = mobileSquarAmountPerSide * mobileSquarAmountPerSide;
+  }
+
+  for (let i = 0; i < totalSquars; i++) {
+    const animationBox = document.createElement('div');
+    animationBox.classList.add('animation-box');
+    animationContainer.appendChild(animationBox)
   }
   // hoverEffectInit();
 };
